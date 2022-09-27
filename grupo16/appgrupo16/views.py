@@ -391,6 +391,14 @@ def eliminarusuario(request, nombre_usuario):
     Usuario.objects.filter(nombre_usuario=nombre_usuario).delete()
     return redirect('/usuario/')
 
+def eliminarempleado(request, identificacion):
+    Empleado.objects.filter(identificacion=identificacion).delete()
+    return redirect('/empleado/')
+
+def eliminarempresa(request, nit):
+    Empresa.objects.filter(nit=nit).delete()
+    return redirect('/empresa/')
+
 def consultarjoin(request, nit):
     datos=Ingresos_Gastos.objects.select_related('nit').filter(nit=nit)
     print(datos)

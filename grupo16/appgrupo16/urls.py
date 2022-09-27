@@ -29,5 +29,7 @@ urlpatterns= [
     path('actualizarusuario/<str:nombre_usuario>',views.actualizarusuario, name='frmact'),
     path('actualizarusuario/', views.actusuario, name="actualizar"),
     path('eliminarusuario/<str:nombre_usuario>', views.eliminarusuario, name="eliminar"),
-    path('consultardatosingresos_gastos/<int:nit>', views.consultarjoin, name="Consultar")
+    path('consultardatosingresos_gastos/<int:nit>', views.consultarjoin, name="Consultar"),
+    path('eliminarempleado/<int:identificacion>', views.eliminarempleado, name="eliminar"),
+    path('eliminarempresa/<int:nit>', views.eliminarempresa, name="eliminar")
 ]
