@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylessfrm.css" %}'>
+  
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nit</th>
+            <th>Nombre Usuario</th>
+            <th>Ingresos</th>
+            <th>Gastos</th>
+            <th>Nombre</th>
+
+        </tr>
+        {% for i in lista %}
+        <tr>
+            <td>{{i.nit.nit}}</td>
+            <td>{{i.nit.nombre_usuario}}</td>
+            <td>{{i.ingresos}}</td>
+            <td>{{i.gastos}}</td>
+            <td>{{i.nit.nombre}}</td>
+        </tr>
+        
+    </table>
+        {%endfor%}
+    
+</body>
+</html>

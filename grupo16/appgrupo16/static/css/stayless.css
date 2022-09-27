@@ -1,0 +1,116 @@
+@font-face{
+    src:url('../fuentes/Oswald-VariableFont_wght.ttf');
+    font-family: miletra;
+}
+@font-face{
+    src:url('../fuentes/QwitcherGrypen-Bold.ttf');
+    font-family: miletra2;
+}
+body {
+    background-image: url('../imagenes/pexels-photo-1114690.jpeg');
+    background-size: cover;
+}
+
+.contenedorheader{
+    background-color:blue;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulologo {
+    background-color: 0%;
+    width: 40%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav{
+    background-color: aqua;
+    width: 60%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+ul {
+    background-color: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    display: inline; 
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    width: 190px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 20px 10px 5px 0;
+}
+
+a{
+    text-decoration: none;
+    color:brown;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: 100;
+}
+
+.titulo{
+    background-color: red;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    text-shadow: 1px 4px 2px black;
+}
+
+.logo {
+    background-image: url('../imagenes/cash_icon-icons.com_51090.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-right: 60px;
+}
+
+.art1 {
+    background-color: rgb(0, 0, 255,0.4);
+    margin: 20px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-family: miletra;
+    border: 10px solid red;
+    border-radius: 20px 10px 5px 0;
+    box-shadow: 4px 6px 5px blue;
+}
+
+.sectionuno {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 25;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: miletra2;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+#article1 {
+    background: rgb(45,33,242);
+    background: linear-gradient(25deg, rgba(45,33,242,1) 0%, rgba(2,16,19,1) 96%);  
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylesstablas.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+<h1>Consultar Empresas</h1>
+    <section class="section3">
+        <div class="tit">Empresas</div>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>NIT</th>
+                    <th>Nombre Usuario</th>
+                    <th>Nombre</th>
+                    <th>Actividad Económica</th>
+                    <th>País</th>
+                    <th>Departamento</th>
+                    <th>Municipio</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for i in empresa%}
+                <tr>
+                    <td>{{i.nit}}</td>
+                    <td>{{i.nombre_usuario}}</td>
+                    <td>{{i.nombre}}</td>
+                    <td>{{i.actividad_economica}}</td>
+                    <td>{{i.pais}}</td>
+                    <td>{{i.departamento}}</td>
+                    <td>{{i.municipio}}</td>
+                    <td>{{i.direccion}}</td>
+                    <td>{{i.telefono}}</td>
+                    <td>{{i.correo}}</td>
+                    <td><a href="/actualizarempresa/{{i.nit}}">Actualizar</a></td>
+                    <td><a href="/eliminarempresa/{{i.nit}}">Eliminar</a></td>
+                </tr>
+                {%endfor%}             
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

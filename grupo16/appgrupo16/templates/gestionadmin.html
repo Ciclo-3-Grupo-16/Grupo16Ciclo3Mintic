@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+{% if request.session.nomusuario %}
+<span>{{request.session.nomusuario}}</span>
+
+</head>
+<body>
+    <h1>Bienvenido su Rol es Administrador</h1>
+    <a href="/formulario/">Crear Empresa</a>
+    <a href="/formulario_empleado/">Agregar Empleado</a>
+    <a href="/formulario_usuario/">Agregar Usuario</a>
+    <a href="/empresa/">Consultar Empresa</a>
+    <a href="/empleado/">Consultar Empleado</a>
+    <a href="/usuario/">Consultar Usuario</a>
+    <a href="/ingresos_gastos/">Visualizar Gastos e Ingresos</a>
+</body>
+{%endif%}
+</html>

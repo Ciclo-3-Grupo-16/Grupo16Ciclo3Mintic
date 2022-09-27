@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylessfrm.css" %}'>
+  
+    <title>Document</title>
+</head>
+<body>
+    <section class="sectiondos">
+        <fieldset class="fi">
+            <form action="/actualizarempleado/" method="POST" class="frm">
+                {%csrf_token %}
+                <legend>FORMULARIO</legend>
+                <label for="id">Identificacion
+                    <input type="text" id="n" name="identificacion" value="{{empleado.identificacion}}">
+                </label>
+
+                <label for="n">Nombre
+                    <input type="text" id="n" name="nombre" value="{{empleado.nombre}}">
+                </label>
+
+                <label for="ap">Apellido
+                    <input type="text" id="ap" name="apellido" value="{{empleado.apellido}}">
+                </label>
+
+
+                <label for="p">País
+                    <input type="text" id="p" name="pais" value="{{empleado.pais}}">
+                </label>
+
+                <label for="de">Departamento
+                    <input type="text" id="de" name="departamento" value="{{empleado.departamento}}">
+                </label>
+ 
+                <label for="m">Municipio
+                    <input type="text" id="m" name="municipio" value="{{empleado.municipio}}">
+                </label>
+
+                <label for="d">Dirección
+                    <input type="text" id="d" name="direccion" value="{{empleado.direccion}}">
+                </label>
+
+                <label for="t">Celular
+                    <input type="text" id="t" name="celular" value="{{empleado.celular}}">
+                </label>
+                
+                <label for="c">Correo
+                    <input type="email" id="c" name="correo" value="{{empleado.correo}}">
+                </label>
+
+                <label for="cg">Cargo
+                    <input type="text" id="cg" name="cargo" value="{{empleado.cargo}}">
+                </label>
+
+                <input type="submit" value="Actualizar">
+            </form>             
+        </fieldset>
+    </section>
+    
+</body>
+</html>

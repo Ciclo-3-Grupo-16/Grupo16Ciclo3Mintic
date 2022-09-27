@@ -1,0 +1,74 @@
+.fi {
+    background-color: rgb(6, -130, 10);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    padding: 20px;
+}
+
+.frm {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    display: block;
+}
+
+[type="text"] {
+    display: block;
+    width: 98%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 0;
+    background-color: antiquewhite;
+    color: black;
+}
+
+[type="email"] {
+    display: block;
+    width: 98%;
+    height: 25px;
+    margin-bottom: 10 px;
+    border: 0;
+    background-color: antiquewhite;
+}
+
+[type="date"] {
+    display: block;
+}
+
+.ec {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fec {
+    display: block;
+    margin-top: 20px;
+}
+
+label {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+[type="submit"] {
+    margin-top: 30px;
+    width: 180px;
+    height: 30px;
+    background-color:blueviolet;
+    margin-left: auto;
+}
+
+legend {
+    text-align: center;
+    color: chartreuse;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+}

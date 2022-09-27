@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylesstablas.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+<h1>Consultar Ingresos y Gastos</h1>
+    <section class="section3">
+        <div class="tit">INGRESOS Y GASTOS</div>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre de Usuario</th>
+                    <th>NIT</th>
+                    <th>Ingresos</th>
+                    <th>Gastos</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for i in ingresos_gastos%}
+                <tr>
+                    <td>{{i.nombre_usuario}}</td>
+                    <td>{{i.nit}}</td>
+                    <td>{{i.ingresos}}</td>
+                    <td>{{i.gastos}}</td>
+                </tr>
+                {%endfor%}             
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

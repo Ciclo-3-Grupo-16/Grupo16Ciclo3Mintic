@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylesstablas.css" %}'>
+    {% if request.session.nomusuario %}
+    <title>Document</title>
+</head>
+<body>
+<h1>Consultar Empresas</h1>
+    <section class="section3">
+        <div class="tit">Empleado</div>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Identificación</th>
+                    <th>Nombre Empleado</th>
+                    <th>Apellido Empleado</th>
+                    <th>País</th>
+                    <th>Departamento</th>
+                    <th>Municipio</th>
+                    <th>Dirección</th>
+                    <th>Celular</th>
+                    <th>Correo</th>
+                    <th>Cargo</th>
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for i in empleado%}
+                <tr>
+                    <td>{{i.identificacion}}</td>
+                    <td>{{i.nombre}}</td>
+                    <td>{{i.apellido}}</td>
+                    <td>{{i.pais}}</td>
+                    <td>{{i.departamento}}</td>
+                    <td>{{i.municipio}}</td>
+                    <td>{{i.direccion}}</td>
+                    <td>{{i.celular}}</td>
+                    <td>{{i.correo}}</td>
+                    <td>{{i.cargo}}</td>
+                    <td><a href="/actualizarempleado/{{i.identificacion}}">Actualizar</a></td>
+                    <td><a href="/eliminarempleado/{{i.identificacion}}">Eliminar</a></td>
+                </tr>
+                {%endfor%}             
+            </tbody>
+        </table>
+    </section>
+</body>
+{%endif%}
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylessfrm.css" %}'>
+  
+    <title>Document</title>
+</head>
+<body>
+    <section class="sectiondos">
+        <fieldset class="fi">
+            <form action="/ingresos_gastos/" method="POST" class="frm">
+                <legend>FORMULARIO</legend>
+                <label for="nu">Nombre de Usuario
+                    <input type="text" id="nu" name="nombre_usuario">
+                </label>
+
+                <label for="nit">NIT
+                    <input type="text" id="nit" name="nit">
+                </label>
+
+                <label for="i">Ingresos
+                    <input type="text" id="i" name="ingresos">
+                </label>
+
+                <label for="g">Gastos
+                    <input type="text" id="g" name="gastos">
+                </label>
+
+                <input type="submit" value="Registrar">
+            </form>             
+        </fieldset>
+    </section>
+    
+</body>
+</html>

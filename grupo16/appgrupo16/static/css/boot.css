@@ -1,0 +1,21 @@
+.div1 {
+    background-color: aqua;
+    height: 150px;
+}
+
+.div2 {
+    background-color: blue;
+    height: 150px;
+}
+
+.div3 {
+    background-color: blueviolet;
+    height: 150px;
+}
+
+.mitabla {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

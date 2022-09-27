@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylessfrm.css" %}'>
+  
+    <title>Document</title>
+</head>
+<body>
+    <section class="sectiondos">
+        <fieldset class="fi">
+            <form action="/empresa/" method="POST" class="frm">
+                <legend>FORMULARIO</legend>
+                <label for="n">NIT
+                    <input type="text" id="n" name="nit">
+                </label>
+
+                <label for="nu">Nombre Usuario
+                    <input type="text" id="nu" name="nombre_usuario">
+                </label>
+
+                <label for="n">Nombre
+                    <input type="text" id="n" name="nombre">
+                </label>
+
+                <label for="ae">Actividad Económica
+                    <input type="text" id="ae" name="actividad_economica">
+                </label>
+
+                <label for="p">País
+                    <input type="text" id="p" name="pais">
+                </label>
+
+                <label for="de">Departamento
+                    <input type="text" id="de" name="departamento">
+                </label>
+ 
+                <label for="m">Municipio
+                    <input type="text" id="m" name="municipio">
+                </label>
+
+                <label for="d">Dirección
+                    <input type="text" id="d" name="direccion">
+                </label>
+
+                <label for="t">Teléfono
+                    <input type="text" id="t" name="telefono">
+                </label>
+                
+                <label for="c">Correo
+                    <input type="email" id="c" name="correo">
+                </label>
+
+                <input type="submit" value="Registrar">
+            </form>             
+        </fieldset>
+    </section>
+    
+</body>
+</html>

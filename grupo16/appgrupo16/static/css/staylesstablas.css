@@ -1,0 +1,27 @@
+.section3 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.tit {
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.tabla {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid blue;
+}
+
+tr{
+    background-color: bisque;
+}
+
+

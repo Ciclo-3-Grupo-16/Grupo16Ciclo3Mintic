@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylessfrm.css" %}'>
+  
+    <title>Document</title>
+</head>
+<body>
+    <section class="sectiondos">
+        <fieldset class="fi">
+            <form action="/usuario/" method="POST" class="frm">
+                <legend>FORMULARIO</legend>
+                <label for="nu">Nombre de Usuario
+                    <input type="text" id="nu" name="nombre_usuario">
+                </label>
+
+                <label for="id">Identificación
+                    <input type="text" id="id" name="identificacion">
+                </label>
+
+                <label for="c">Clave
+                    <input type="text" id="c" name="clave">
+                </label>
+
+                <label for="r">Rol
+                    <input type="text" id="r" name="rol">
+                </label>
+
+                <input type="submit" value="Registrar">
+            </form>             
+        </fieldset>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylesstablas.css" %}'>
+    <title>Document</title>
+</head>
+<body>
+<h1>Consultar Usuario</h1>
+    <section class="section3">
+        <div class="tit">Usuario</div>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre Usuario</th>
+                    <th>Identificación</th>
+                    <th>Clave</th>
+                    <th>Rol</th>
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for i in usuario%}
+                <tr>
+                    <td>{{i.nombre_usuario}}</td>
+                    <td>{{i.identificacion}}</td>
+                    <td>{{i.clave}}</td>
+                    <td>{{i.rol}}</td>
+                    <td><a href="/actualizarusuario/{{i.nombre_usuario}}">Actualizar</a></td>
+                    <td><a href="/eliminarusuario/{{i.nombre_usuario}}">Eliminar</a></td>
+                </tr>
+                {%endfor%}             
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

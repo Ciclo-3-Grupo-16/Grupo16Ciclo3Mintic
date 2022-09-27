@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylessfrm.css" %}'>
+  
+    <title>Document</title>
+</head>
+<body>
+    <section class="sectiondos">
+        <fieldset class="fi">
+            <form action="/actualizarusuario/" method="POST" class="frm">
+                {%csrf_token %}
+                <legend>FORMULARIO</legend>
+                <label for="nous">Nombre de Usuario
+                    <input type="text" id="nous" name="nombre_usuario" value="{{usuario.nombre_usuario}}">
+                </label>
+
+                <label for="id">Identificación
+                    <input type="text" id="id" name="identificacion" value="{{usuario.identificacion}}">
+                </label>
+
+                <label for="cl">Clave
+                    <input type="text" id="cl" name="clave" value="{{usuario.clave}}">
+                </label>
+
+                <label for="r">Rol
+                    <input type="text" id="r" name="rol" value="{{usuario.rol}}">
+                </label>
+
+                <input type="submit" value="Actualizar">
+            </form>             
+        </fieldset>
+    </section>
+    
+</body>
+</html>

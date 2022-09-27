@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='{% static "css/staylessfrm.css" %}'>
+  
+    <title>Document</title>
+</head>
+<body>
+    <section class="sectiondos">
+        <fieldset class="fi">
+            <form action="/empleado/" method="POST" class="frm">
+                <legend>FORMULARIO</legend>
+                <label for="id">Identificación
+                    <input type="text" id="id" name="identificacion">
+                </label>
+
+                <label for="ne">Nombre Empleado
+                    <input type="text" id="ne" name="nombre">
+                </label>
+
+                <label for="ap">Apellido Empleado
+                    <input type="text" id="ap" name="apellido">
+                </label>
+
+
+                <label for="p">País
+                    <input type="text" id="p" name="pais">
+                </label>
+
+                <label for="de">Departamento
+                    <input type="text" id="de" name="departamento">
+                </label>
+ 
+                <label for="m">Municipio
+                    <input type="text" id="m" name="municipio">
+                </label>
+
+                <label for="d">Dirección
+                    <input type="text" id="d" name="direccion">
+                </label>
+
+                <label for="t">Celular
+                    <input type="text" id="t" name="celular">
+                </label>
+                
+                <label for="c">Correo
+                    <input type="email" id="c" name="correo">
+                </label>
+
+                <label for="cg">Cargo
+                    <input type="text" id="cg" name="cargo">
+                </label>
+
+                <input type="submit" value="Registrar">
+            </form>             
+        </fieldset>
+    </section>
+    
+</body>
+</html>
