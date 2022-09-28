@@ -33,9 +33,9 @@ class Empresa(models.Model):
     telefono = models.CharField(max_length=15)
     correo = models.CharField(max_length=40)
     
-    def __str__(self) -> str:
-        return '%s %s %s %s %s %s %s %s %s %s' %(self.nit, self.nombre_usuario, self.nombre, self.actividad_economica,
-        self.pais, self.departamento, self.municipio, self.direccion, self.telefono, self.correo)
+    #def __str__(self) -> str:
+    #    return '%s %s %s %s %s %s %s %s %s %s' %(self.nit, self.nombre_usuario, self.nombre, self.actividad_economica,
+    #    self.pais, self.departamento, self.municipio, self.direccion, self.telefono, self.correo)
 
 class Ingresos_Gastos(models.Model):
     nombre_usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
